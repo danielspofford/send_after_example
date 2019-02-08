@@ -9,7 +9,7 @@ defmodule SendAfterExample.Application do
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: SendAfterExample.Worker.start_link(arg)
-      # {SendAfterExample.Worker, arg}
+      SendAfterExample.Worker
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
