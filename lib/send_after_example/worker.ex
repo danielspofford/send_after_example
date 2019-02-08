@@ -7,10 +7,12 @@ defmodule SendAfterExample.Worker do
   require Logger
 
   def start_link([]) do
+    Logger.info("start_link running process: #{inspect(self())}")
     GenServer.start_link(__MODULE__, [])
   end
 
   def init([]) do
+    Logger.info("init running process: #{inspect(self())}")
     state = %{potatoes: true}
     {:ok, state, {:continue, "could be anything"}}
   end
