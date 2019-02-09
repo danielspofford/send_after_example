@@ -1,21 +1,3 @@
 # SendAfterExample
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `send_after_example` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:send_after_example, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/send_after_example](https://hexdocs.pm/send_after_example).
-
+[SendAfterExample.Worker](lib/send_after_example/worker.ex) demonstrates a GenServer that leverages `GenServer.handle_continue/2` and `Process.send_after/4` to "do work" on an interval.
